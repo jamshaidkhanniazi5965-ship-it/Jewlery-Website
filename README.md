@@ -2,6 +2,13 @@
 
 Showcase website for **Germani Jewellery**, Sydney (Michel Germani). Static HTML/CSS/JS with no build step and no e-commerce. Enquiries and appointments go through the contact form, phone or email.
 
+## Brand rules (from Germani)
+
+- **Logo font:** Times New Roman (falls back to Tinos, a free Times-compatible web font, on devices without it).
+- **Colours:** Navy Blue `#0b1a3a`, Gold `#d9c39a` / `#b8955a`, Ivory `#f8f3e8` (with Light Cream `#efe7d6` for alternate sections).
+- **Logo on the website:** gold letters on navy, used in the header and footer. Signage uses white on black or a gold stainless-steel background.
+- Logo files: `assets/logo-mark-gold.svg`, `assets/logo-mark-navy.svg`, `assets/logo-mark.svg` (black).
+
 ## Pages
 
 | File | Content |
