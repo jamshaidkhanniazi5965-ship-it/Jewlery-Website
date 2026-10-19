@@ -9,6 +9,7 @@
   --night: #081430;        /* deep navy for the starfield */
   --gold: #b8955a;
   --gold-soft: #d9c39a;    /* gold on navy */
+  --gold-metal: linear-gradient(180deg, #f7e8bc 0%, #e4c47e 32%, #b9883e 54%, #d8b366 74%, #f2dea4 100%);
   --paper: #f8f3e8;        /* ivory: main page background */
   --ivory: #efe7d6;        /* light cream: alternate sections */
   --text: #1f2740;
@@ -160,8 +161,8 @@ p { margin: 0 0 1.2em; }
 }
 
 .brand__mark {
-  width: 46px; aspect-ratio: 2245 / 1483;
-  background: currentColor;
+  width: 60px; aspect-ratio: 2245 / 1483;
+  background: var(--gold-metal);
   -webkit-mask: url("../logo-mark.svg") center / contain no-repeat;
           mask: url("../logo-mark.svg") center / contain no-repeat;
   margin-bottom: 9px;
@@ -171,19 +172,23 @@ p { margin: 0 0 1.2em; }
 .brand__name {
   font-family: var(--logo);
   font-weight: 700;
-  font-size: 1.85rem;
-  letter-spacing: .2em;
-  margin-right: -.2em;  /* balance tracking */
+  font-size: 1.95rem;
+  letter-spacing: .12em;
+  margin-right: -.12em;  /* balance tracking */
+  background: var(--gold-metal);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
   transition: font-size .3s ease;
 }
 
 .brand__sub {
   font-family: var(--sans);
-  font-size: .62rem;
-  font-weight: 400;
-  letter-spacing: .5em;
-  margin-right: -.5em;
-  margin-top: 7px;
+  font-size: .7rem;
+  font-weight: 500;
+  letter-spacing: .48em;
+  margin-right: -.48em;
+  margin-top: 6px;
   color: var(--gold-soft);
 }
 
@@ -237,9 +242,9 @@ p { margin: 0 0 1.2em; }
   .hdr-top { grid-template-columns: 44px 1fr 44px; padding-top: 12px; padding-bottom: 12px; }
   .hdr-side { display: none; }
   .nav-toggle { display: block; }
-  .brand__mark { width: 34px; margin-bottom: 6px; }
-  .brand__name { font-size: 1.45rem; }
-  .brand__sub { font-size: .55rem; margin-top: 5px; }
+  .brand__mark { width: 42px; margin-bottom: 6px; }
+  .brand__name { font-size: 1.5rem; }
+  .brand__sub { font-size: .54rem; margin-top: 5px; }
   .site-header.is-scrolled .brand__name { font-size: 1.25rem; }
 
   .main-nav {
@@ -311,7 +316,7 @@ p { margin: 0 0 1.2em; }
 }
 .hero__mark {
   width: 74px; aspect-ratio: 2245 / 1483;
-  background: var(--gold-soft);
+  background: var(--gold-metal);
   -webkit-mask: url("../logo-mark.svg") center / contain no-repeat;
           mask: url("../logo-mark.svg") center / contain no-repeat;
   margin-bottom: 28px;
@@ -570,7 +575,7 @@ p { margin: 0 0 1.2em; }
   padding-bottom: 56px; border-bottom: 1px solid rgba(255,255,255,.14);
 }
 .footer-brand { display: flex; flex-direction: column; align-items: flex-start; color: var(--gold-soft); }
-.footer-brand .brand__mark { width: 52px; margin-bottom: 12px; background: var(--gold-soft); }
+.footer-brand .brand__mark { width: 60px; margin-bottom: 12px; }
 .footer-brand .brand__name { font-size: 1.6rem; }
 .footer-brand .brand__sub { color: var(--gold-soft); }
 .footer-brand p { margin-top: 24px; font-size: .9rem; max-width: 22em; }
