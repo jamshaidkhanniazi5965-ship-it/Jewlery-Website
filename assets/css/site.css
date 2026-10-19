@@ -185,10 +185,11 @@ p { margin: 0 0 1.2em; }
 
 .brand__sub {
   font-family: var(--sans);
-  font-size: .7rem;
+  font-size: .66rem;
   font-weight: 500;
-  letter-spacing: .48em;
-  margin-right: -.48em;
+  letter-spacing: .34em;
+  margin-right: -.34em;
+  white-space: nowrap;
   margin-top: 6px;
   color: var(--gold-soft);
 }
@@ -245,7 +246,7 @@ p { margin: 0 0 1.2em; }
   .nav-toggle { display: block; }
   .brand__mark { width: 42px; margin-bottom: 6px; }
   .brand__name { font-size: 1.5rem; }
-  .brand__sub { font-size: .54rem; margin-top: 5px; }
+  .brand__sub { font-size: .52rem; margin-top: 5px; }
   .site-header.is-scrolled .brand__name { font-size: 1.25rem; }
 
   .main-nav {
@@ -588,7 +589,7 @@ p { margin: 0 0 1.2em; }
 }
 .footer-brand { display: flex; flex-direction: column; align-items: flex-start; color: var(--gold-soft); }
 .footer-brand .brand__mark { width: 60px; margin-bottom: 12px; }
-.footer-brand .brand__name { font-size: 1.6rem; }
+.footer-brand .brand__name { font-size: 1.95rem; }
 .footer-brand .brand__sub { color: var(--gold-soft); }
 .footer-brand p { margin-top: 24px; font-size: .9rem; max-width: 22em; }
 .site-footer h4 {

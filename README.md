@@ -1,6 +1,6 @@
-# Germani Jewellery — website
+# Germani Jewellery Academy — website
 
-Showcase website for **Germani Jewellery** and the **Germani Jewellery Academy**, Sydney (Michel Germani). Static HTML/CSS/JS with no build step and no e-commerce. Enquiries and appointments go through the contact form, phone or email.
+Website for **Germani Jewellery Academy** (official business name), Sydney: Michel Germani's jewellery and the Academy. Static HTML/CSS/JS with no build step and no e-commerce. Enquiries and appointments go through the contact form, phone or email.
 
 ## Brand rules (from Germani)
 

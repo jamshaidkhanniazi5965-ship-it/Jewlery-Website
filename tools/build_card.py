@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Michel Germani's digital business card from cards/michel.json.
+"""Build Michel Germani's digital business card (Germani Jewellery Academy) from cards/michel.json.
 
 Writes:
   michel.html                 the digital card, served at /michel
@@ -67,7 +67,7 @@ def vcard(p, url, photo_bytes):
         f'URL:{p["website"]}',
         f'ADR;TYPE=WORK:;;{vesc(p["street"])};{vesc(p["city"])};{vesc(p["state"])};;{vesc(p["country"])}',
         f'X-SOCIALPROFILE;TYPE=instagram:{p["instagram"]}',
-        f'NOTE:{vesc(p["company_2"] + ": " + p["academy_website"] + "  Digital card: " + url)}',
+        f'NOTE:{vesc("Also: " + p["academy_website"] + "  Digital card: " + url)}',
         "PHOTO;ENCODING=b;TYPE=JPEG:" + base64.b64encode(photo_bytes).decode(),
         "END:VCARD",
     ]
@@ -100,8 +100,8 @@ def page(p, url):
     rows = "".join([
         row(f'tel:{p["phone"].replace(" ", "")}', "phone", "Mobile", p["phone_display"]),
         row(f'mailto:{p["email"]}', "email", "Email", p["email"]),
-        row(p["website"], "web", "Germani Jewellery", p["website_print"], True),
-        row(p["academy_website"], "cap", "Germani Jewellery Academy", "germanijewelleryacademy.com", True),
+        row(p["website"], "web", "Website", p["website_print"], True),
+        row(p["academy_website"], "cap", "Academy website", "germanijewelleryacademy.com", True),
         row(maps, "pin", "Address", addr, True),
         row(p["instagram"], "insta", "Instagram", p["instagram_handle"], True),
     ])
@@ -116,7 +116,7 @@ def page(p, url):
 <title>{title}</title>
 <meta name="description" content="{name}, {html.escape(p['position'])}, {html.escape(p['company'])}. Save my contact details.">
 <meta property="og:title" content="{title}">
-<meta property="og:description" content="{html.escape(p['position'])}, {html.escape(p['company'])} &amp; {html.escape(p['company_2'])}. Tap to save my contact.">
+<meta property="og:description" content="{html.escape(p['position'])}, {html.escape(p['company'])}. Tap to save my contact.">
 <meta property="og:image" content="{p['website']}/cards/img/{p['slug']}.jpg">
 <meta name="theme-color" content="{NAVY}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -132,7 +132,7 @@ body{{font-family:Jost,system-ui,sans-serif;font-weight:300;background:var(--ivo
 .top::after{{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,#974400,#f1c45e 30%,#fde39b 50%,#c98a22 75%,#974400)}}
 .mark{{width:56px;height:37px;margin:0 auto 8px;background:var(--gold);-webkit-mask:url(/assets/logo-mark.svg) center/contain no-repeat;mask:url(/assets/logo-mark.svg) center/contain no-repeat}}
 .wm{{font-family:"Times New Roman",Tinos,serif;font-weight:700;font-size:26px;letter-spacing:.12em;margin-right:-.12em;background:var(--gold);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}}
-.sub{{font-size:10px;font-weight:500;letter-spacing:.48em;margin-right:-.48em;color:#f0c867;margin-top:6px}}
+.sub{{font-size:10px;font-weight:500;letter-spacing:.3em;margin-right:-.3em;white-space:nowrap;color:#f0c867;margin-top:6px}}
 .photo{{position:relative;z-index:1;width:148px;height:148px;border-radius:50%;object-fit:cover;border:4px solid var(--card);box-shadow:0 0 0 2px #c98a22;margin:-74px auto 0;display:block;background:var(--ivory)}}
 .who{{text-align:center;padding:16px 24px 4px}}
 h1{{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:34px;line-height:1.1}}
@@ -162,14 +162,14 @@ footer a{{color:var(--navy)}}
   <div class="top">
     <div class="mark" aria-hidden="true"></div>
     <div class="wm">GERMANI</div>
-    <div class="sub">JEWELLERY</div>
+    <div class="sub">JEWELLERY ACADEMY</div>
   </div>
   <img class="photo" src="/cards/img/{p['slug']}.jpg" alt="Photo of {name}" width="148" height="148">
   <div class="who">
     <h1>{name}</h1>
     <div class="pos">{html.escape(p['position'])}</div>
     <div class="cred">{html.escape(p['credentials'])}</div>
-    <div class="co">{html.escape(p['company'])} &middot; {html.escape(p['company_2'])}</div>
+    <div class="co">{html.escape(p['company'])}</div>
   </div>
   <div class="actions">
     <a class="btn btn-save" href="/{p['slug']}.vcf" download="Michel-Germani.vcf">{icon("save")} Save Contact</a>
@@ -213,7 +213,7 @@ body {{ -webkit-print-color-adjust: exact; print-color-adjust: exact; background
   -webkit-mask: url(../../assets/logo-mark.svg) center/contain no-repeat; mask: url(../../assets/logo-mark.svg) center/contain no-repeat; }}
 .front .wm {{ font-family: "Times New Roman", Tinos, serif; font-weight: 700; font-size: 19pt; letter-spacing: .12em; margin-right: -.12em; line-height: 1;
   background: linear-gradient(180deg,#fdeaa8 0%,#f1c45e 30%,#c98a22 55%,#e8b34b 78%,#fde39b 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }}
-.front .sub {{ font-family: Jost, sans-serif; font-weight: 500; font-size: 6.4pt; letter-spacing: .5em; margin-right: -.5em; color: #f0c867; margin-top: 1.6mm; }}
+.front .sub {{ font-family: Jost, sans-serif; font-weight: 500; font-size: 6pt; letter-spacing: .32em; margin-right: -.32em; white-space: nowrap; color: #f0c867; margin-top: 1.6mm; }}
 .front .rule {{ position: absolute; left: 0; right: 0; bottom: 0; height: 4.6mm; background: linear-gradient(90deg,#974400,#f1c45e 30%,#fde39b 50%,#c98a22 75%,#974400); }}
 .back {{ background: #f6efe4; color: {NAVY}; font-family: Jost, sans-serif; }}
 .back .in {{ position: absolute; left: 3mm; top: 3mm; width: 90mm; height: 55mm; padding: 5mm 5mm 5mm 6mm; display: grid; grid-template-columns: 1fr 23mm; column-gap: 4mm; align-items: center; }}
@@ -229,7 +229,7 @@ body {{ -webkit-print-color-adjust: exact; print-color-adjust: exact; background
 .back .rule {{ position: absolute; left: 0; right: 0; bottom: 0; height: 4.6mm; background: {NAVY}; }}
 .back .rule::before {{ content: ""; position: absolute; left: 0; right: 0; top: 0; height: .5mm; background: linear-gradient(90deg,#974400,#f1c45e 30%,#fde39b 50%,#c98a22 75%,#974400); }}
 </style></head><body>
-<section class="side front"><div class="logo"><div class="mark"></div><div class="wm">GERMANI</div><div class="sub">JEWELLERY</div></div><div class="rule"></div></section>
+<section class="side front"><div class="logo"><div class="mark"></div><div class="wm">GERMANI</div><div class="sub">JEWELLERY ACADEMY</div></div><div class="rule"></div></section>
 <section class="side back"><div class="in">
   <div>
     <div class="name">{name}</div>
