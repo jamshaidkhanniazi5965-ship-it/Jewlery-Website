@@ -1,0 +1,27 @@
+{
+  "slug": "michel",
+  "first_name": "Michel",
+  "last_name": "Germani",
+  "position": "Founder & Designer",
+  "credentials": "Graduate Gemologist (G.G., G.I.A.)",
+  "company": "Germani Jewellery",
+  "company_2": "Germani Jewellery Academy",
+  "phone": "+61 420 205 096",
+  "phone_display": "0420 205 096",
+  "email": "michelgermani@me.com",
+  "website": "https://germani-jewellery.netlify.app",
+  "website_print": "germani.com.au",
+  "academy_website": "https://www.germanijewelleryacademy.com",
+  "street": "204 Clarence St",
+  "city": "Sydney",
+  "state": "NSW",
+  "country": "Australia",
+  "instagram": "https://www.instagram.com/germanijewellery/",
+  "instagram_handle": "@germanijewellery",
+  "photo": "michel-germani.webp",
+  "bio": [
+    "Michel Germani is an Australian jewellery designer and the founder of Germani Jewellery, one of Sydney's most recognised luxury jewellery houses.",
+    "For more than four decades he has dedicated his life to fine jewellery: from his studies at the Gemological Institute of America in Los Angeles, to professional experience in Antwerp, Switzerland and Saudi Arabia, and the establishment of Germani Jewellery in Australia in 1985.",
+    "His work spans custom engagement rings, important diamond pieces and unique handcrafted designs. Today he also shares his experience through the Germani Jewellery Academy."
+  ]
+}

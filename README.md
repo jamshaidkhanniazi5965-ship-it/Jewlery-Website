@@ -45,3 +45,11 @@ netlify.toml, robots.txt, sitemap.xml
 Deploy the repository root on Netlify (`publish = "."`). The appointment form uses Netlify Forms; submissions appear under *Forms* in the Netlify dashboard, where email notifications can be switched on.
 
 To preview locally: `npx http-server .` and open http://localhost:8080.
+
+## Michel Germani's business card
+
+- **Digital card:** `https://germani-jewellery.netlify.app/michel` (`michel.html`, kept out of search engines). "Save Contact" downloads `michel.vcf` with his photo.
+- **QR code:** `cards/qr/michel.png` and `cards/qr/michel.svg` (vector, for printers). It opens the digital card.
+- **Printed card:** `cards/print/michel-business-card.pdf`, 90 × 55 mm with 3 mm bleed (page size 96 × 61 mm), front and back. Previews: `cards/print/michel-card-front.png`, `michel-card-back.png`.
+
+To update: edit `cards/michel.json`, then from the repo root run `pip install segno pillow`, `python3 tools/build_card.py`, and (while serving the site with `npx http-server -p 8090 .`) `node tools/print_card.js`.

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Michel Germani business card</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Jost:wght@300;400;500&family=Tinos:wght@700&display=swap" rel="stylesheet">
+<style>
+@page { size: 96mm 61mm; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { -webkit-print-color-adjust: exact; print-color-adjust: exact; background: #888; }
+.side { width: 96mm; height: 61mm; position: relative; overflow: hidden; page-break-after: always; }
+.front { background: linear-gradient(rgba(1,14,79,.5),rgba(1,10,56,.66)), url(../../assets/img/lapis-band.webp) center/cover; }
+.front .logo { position: absolute; inset: 3mm 3mm 3mm 3mm; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.front .mark { width: 16mm; height: 10.6mm; margin-bottom: 2.2mm; background: linear-gradient(180deg,#fdeaa8 0%,#f1c45e 30%,#c98a22 55%,#e8b34b 78%,#fde39b 100%);
+  -webkit-mask: url(../../assets/logo-mark.svg) center/contain no-repeat; mask: url(../../assets/logo-mark.svg) center/contain no-repeat; }
+.front .wm { font-family: "Times New Roman", Tinos, serif; font-weight: 700; font-size: 19pt; letter-spacing: .12em; margin-right: -.12em; line-height: 1;
+  background: linear-gradient(180deg,#fdeaa8 0%,#f1c45e 30%,#c98a22 55%,#e8b34b 78%,#fde39b 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.front .sub { font-family: Jost, sans-serif; font-weight: 500; font-size: 6.4pt; letter-spacing: .5em; margin-right: -.5em; color: #f0c867; margin-top: 1.6mm; }
+.front .rule { position: absolute; left: 0; right: 0; bottom: 0; height: 4.6mm; background: linear-gradient(90deg,#974400,#f1c45e 30%,#fde39b 50%,#c98a22 75%,#974400); }
+.back { background: #f6efe4; color: #0a1c6b; font-family: Jost, sans-serif; }
+.back .in { position: absolute; left: 3mm; top: 3mm; width: 90mm; height: 55mm; padding: 5mm 5mm 5mm 6mm; display: grid; grid-template-columns: 1fr 23mm; column-gap: 4mm; align-items: center; }
+.back .name { font-family: "Cormorant Garamond", serif; font-weight: 600; font-size: 15pt; line-height: 1; }
+.back .pos { font-weight: 500; font-size: 5.6pt; letter-spacing: .2em; text-transform: uppercase; margin-top: 1.6mm; }
+.back .cred { font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 7.6pt; margin-top: .8mm; color: #2c3d7a; }
+.back .line { width: 9mm; height: .25mm; background: #c98a22; margin: 2.6mm 0 2.4mm; }
+.back .d { font-size: 6.4pt; line-height: 1.62; font-weight: 400; }
+.back .d b { font-weight: 500; }
+.back .qr { text-align: center; }
+.back .qr svg { width: 23mm; height: 23mm; display: block; }
+.back .qr span { display: block; font-size: 4.6pt; letter-spacing: .14em; text-transform: uppercase; margin-top: .8mm; }
+.back .rule { position: absolute; left: 0; right: 0; bottom: 0; height: 4.6mm; background: #0a1c6b; }
+.back .rule::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: .5mm; background: linear-gradient(90deg,#974400,#f1c45e 30%,#fde39b 50%,#c98a22 75%,#974400); }
+</style></head><body>
+<section class="side front"><div class="logo"><div class="mark"></div><div class="wm">GERMANI</div><div class="sub">JEWELLERY</div></div><div class="rule"></div></section>
+<section class="side back"><div class="in">
+  <div>
+    <div class="name">Michel Germani</div>
+    <div class="pos">Founder &amp; Designer</div>
+    <div class="cred">Graduate Gemologist (G.G., G.I.A.)</div>
+    <div class="line"></div>
+    <div class="d"><b>M</b>&nbsp; 0420 205 096<br><b>E</b>&nbsp; michelgermani@me.com<br>204 Clarence St, Sydney<br>germani.com.au</div>
+  </div>
+  <div class="qr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 370" class="segno"><path transform="scale(10)" class="qrline" stroke="#0a1c6b" d="M2 2.5h7m1 0h1m4 0h1m2 0h1m1 0h4m1 0h1m2 0h7m-33 1h1m5 0h1m2 0h1m5 0h2m1 0h1m2 0h1m4 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m4 0h2m1 0h1m3 0h1m1 0h2m2 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h1m1 0h3m4 0h2m6 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h4m5 0h2m4 0h1m2 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m1 0h1m2 0h1m1 0h2m7 0h1m1 0h1m1 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-23 1h3m2 0h2m1 0h1m1 0h2m2 0h1m-24 1h7m1 0h1m3 0h3m1 0h1m1 0h1m2 0h1m1 0h1m2 0h2m3 0h1m-32 1h1m1 0h1m3 0h4m1 0h1m3 0h5m2 0h1m2 0h2m1 0h2m1 0h1m-33 1h2m1 0h1m1 0h3m1 0h4m4 0h1m2 0h1m1 0h1m3 0h1m1 0h1m1 0h1m-28 1h2m2 0h5m1 0h2m2 0h2m1 0h3m2 0h1m2 0h4m-32 1h2m1 0h4m7 0h3m5 0h2m1 0h1m1 0h3m2 0h1m-33 1h2m1 0h2m2 0h1m1 0h2m6 0h4m2 0h1m2 0h1m2 0h1m1 0h2m-33 1h1m1 0h2m1 0h5m3 0h2m1 0h1m1 0h1m1 0h2m3 0h3m3 0h1m-30 1h2m3 0h1m3 0h1m3 0h1m2 0h1m1 0h3m1 0h3m1 0h3m-31 1h2m4 0h1m1 0h1m1 0h1m2 0h3m1 0h1m6 0h2m1 0h2m3 0h1m-29 1h2m1 0h7m2 0h5m2 0h1m2 0h2m1 0h4m-32 1h2m1 0h5m1 0h1m3 0h1m1 0h1m3 0h3m1 0h2m1 0h2m1 0h2m-32 1h3m1 0h1m2 0h3m6 0h1m2 0h6m1 0h5m1 0h1m-33 1h1m4 0h2m2 0h3m1 0h1m4 0h1m3 0h1m1 0h2m1 0h3m-30 1h1m1 0h1m1 0h1m5 0h1m1 0h1m3 0h1m2 0h2m2 0h1m1 0h2m2 0h1m2 0h1m-33 1h1m5 0h2m3 0h3m2 0h3m2 0h2m1 0h2m1 0h1m3 0h1m-32 1h1m1 0h1m1 0h2m1 0h1m1 0h1m2 0h6m3 0h3m1 0h2m2 0h2m-31 1h1m3 0h1m1 0h5m2 0h1m2 0h2m1 0h2m1 0h7m2 0h2m-25 1h8m3 0h2m2 0h2m3 0h1m1 0h3m-33 1h7m1 0h4m5 0h2m1 0h2m1 0h2m1 0h1m1 0h1m1 0h2m-32 1h1m5 0h1m1 0h1m1 0h1m2 0h3m4 0h5m3 0h4m-32 1h1m1 0h3m1 0h1m1 0h2m2 0h2m2 0h3m3 0h1m1 0h6m1 0h1m-32 1h1m1 0h3m1 0h1m1 0h3m2 0h2m1 0h1m1 0h3m2 0h3m2 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h4m5 0h1m2 0h1m2 0h2m1 0h2m1 0h2m-31 1h1m5 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h1m4 0h1m1 0h3m-31 1h7m2 0h4m1 0h2m6 0h1m1 0h2m1 0h1m1 0h1m1 0h1"/></svg>
+<span>Scan to save</span></div>
+</div><div class="rule"></div></section>
+</body></html>
