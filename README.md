@@ -4,13 +4,11 @@ Showcase website for **Germani Jewellery**, Sydney (Michel Germani). Static HTML
 
 ## Brand rules (from Germani)
 
-The website uses the colours of the Germani brochure:
-
-- **Lapis blue** `#0a1c6b` / `#010e4f`: header, buttons, dark sections. The dark sections use the lapis-and-gold-leaf texture from the brochure cover (`assets/img/lapis-*.webp`).
-- **Gold**: metallic gold logo, accents `#a8701c` on ivory, `#f0c867` on lapis. The homepage banner has the brushed-gold sweep from the cover (`assets/img/gold-leaf.webp`).
-- **Ivory satin** `#f6efe4` (alternate sections `#eee3d2`): page background.
-- **Burgundy** `#773731`: headings, as on the brochure's inside pages. Body text `#2f2f30`.
-- **Logo:** G-diamond mark over GERMANI in bold Times Roman (Tinos fallback), metallic gold on lapis.
+- **Header and footer:** the brochure blue (`#0a1c6b` / `#010e4f`, lapis texture in the footer) with the gold logo.
+- **Inside the pages:** all ivory (`#f6efe4`).
+- **All text:** navy blue (headings `#0a1c6b`, body `#13235e`, secondary `#45558a`).
+- **Gold:** the logo (metallic gold, G-diamond mark over GERMANI in bold Times Roman), plus thin rules only.
+- No models on the homepage, and the phrase "high jewellery" is not used.
 - Logo files: `assets/logo-mark-gold.svg`, `assets/logo-mark-navy.svg`, `assets/logo-mark.svg` (black).
 
 ## Pages

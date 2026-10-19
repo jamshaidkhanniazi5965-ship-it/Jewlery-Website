@@ -3,18 +3,18 @@
    ========================================================================== */
 
 :root {
-  /* Germani brochure colours: lapis blue, gold leaf, ivory satin, burgundy */
-  --ink: #0a1c6b;          /* lapis blue: header, buttons */
-  --ink-soft: #4a423a;
-  --night: #010e4f;        /* deep lapis */
-  --wine: #773731;         /* burgundy headings */
-  --gold: #a8701c;         /* gold accents on ivory */
+  /* Germani colours: brochure blue + gold for header/footer, ivory inside, all text navy */
+  --ink: #0a1c6b;          /* brochure blue: header, footer, buttons */
+  --ink-soft: #24346e;     /* navy: lead text */
+  --night: #010e4f;        /* deep brochure blue */
+  --wine: #0a1c6b;         /* headings: navy */
+  --gold: #b8862f;         /* gold: logo and thin rules only */
   --gold-soft: #f0c867;    /* gold on lapis */
   --gold-metal: linear-gradient(180deg, #fdeaa8 0%, #f1c45e 30%, #c98a22 55%, #e8b34b 78%, #fde39b 100%);
   --paper: #f6efe4;        /* ivory satin: main page background */
-  --ivory: #eee3d2;        /* deeper ivory: alternate sections */
-  --text: #2f2f30;
-  --muted: #6b6258;
+  --ivory: #f6efe4;        /* inside is all ivory */
+  --text: #13235e;         /* navy */
+  --muted: #45558a;        /* soft navy */
   --line: #e0d2bc;
 
   --serif: "Cormorant Garamond", "Times New Roman", serif;
@@ -69,7 +69,7 @@ p { margin: 0 0 1.2em; }
   font-weight: 400;
   letter-spacing: .32em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--ink);
   margin-bottom: 1.4em;
 }
 
@@ -130,7 +130,7 @@ p { margin: 0 0 1.2em; }
   border-bottom: 1px solid var(--gold);
   transition: color .3s, border-color .3s;
 }
-.link-arrow:hover { color: var(--gold); }
+.link-arrow:hover { color: var(--ink-soft); }
 
 /* ---------- Header ---------- */
 
@@ -324,10 +324,28 @@ p { margin: 0 0 1.2em; }
   .hero__media { aspect-ratio: 4 / 5; }
 }
 
+/* Ivory banner with a featured piece */
+.hero--ivory {
+  grid-template-columns: 1fr 1fr; align-items: center;
+  min-height: min(78vh, 760px);
+  max-width: var(--wrap); margin: 0 auto; padding: clamp(32px, 5vw, 64px) var(--gutter);
+}
+.hero__copy { text-align: center; display: flex; flex-direction: column; align-items: center; }
+.hero__copy h1 { margin-bottom: .35em; }
+.hero__copy p { max-width: 26em; color: var(--muted); font-size: 1.05rem; }
+.hero--ivory .hero__mark { margin-bottom: 24px; }
+.hero__piece { display: flex; justify-content: center; }
+.hero__piece img { width: 100%; max-width: 560px; mix-blend-mode: multiply; animation: heroZoom 14s ease-out both; }
+@media (max-width: 860px) {
+  .hero--ivory { grid-template-columns: 1fr; min-height: 0; }
+  .hero__piece { order: -1; }
+  .hero__piece img { max-width: 420px; }
+}
+
 /* ---------- Sections ---------- */
 
 .section { padding: clamp(72px, 10vw, 140px) 0; }
-.section--ivory { background: var(--ivory); }
+.section--ivory { background: var(--ivory); border-top: 1px solid var(--line); }
 .section--tight { padding: clamp(48px, 6vw, 88px) 0; }
 
 .section-head { text-align: center; max-width: 720px; margin: 0 auto clamp(40px, 5vw, 72px); }
@@ -371,7 +389,7 @@ p { margin: 0 0 1.2em; }
   font-size: .68rem; letter-spacing: .28em; text-transform: uppercase; color: var(--muted);
   transition: color .3s;
 }
-.tile:hover .tile__cta { color: var(--gold); }
+.tile:hover .tile__cta { color: var(--ink); }
 
 @media (max-width: 860px) { .tiles { grid-template-columns: repeat(2, 1fr); } .tile__label { font-size: 1.2rem; } }
 
@@ -424,7 +442,7 @@ p { margin: 0 0 1.2em; }
 }
 .steps h3 { font-size: 1.35rem; margin-bottom: .4em; }
 .steps p { font-size: .95rem; }
-.section:not(.starfield) .steps li::before { color: var(--gold); }
+.section:not(.starfield) .steps li::before { color: var(--ink); }
 .section:not(.starfield) .steps p { color: var(--muted); }
 @media (max-width: 860px) { .steps { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .steps { grid-template-columns: 1fr; } }
@@ -517,7 +535,7 @@ p { margin: 0 0 1.2em; }
 .prose p { font-size: 1.05rem; }
 .prose p:first-of-type::first-letter {
   float: left; font-family: var(--serif); font-size: 4.6rem; line-height: .82;
-  padding: 6px 12px 0 0; color: var(--gold);
+  padding: 6px 12px 0 0; color: var(--ink);
 }
 @media (max-width: 860px) { .house-intro { grid-template-columns: 1fr; } .house-portrait { position: static; } }
 
