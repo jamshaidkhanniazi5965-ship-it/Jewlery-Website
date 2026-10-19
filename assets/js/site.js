@@ -140,6 +140,8 @@
     if (piece) {
       var pieceField = form.querySelector("[name=piece]");
       if (pieceField) pieceField.value = piece;
+      var interest = form.querySelector("[name=interest]");
+      if (interest && /academy/i.test(piece)) interest.value = "Germani Jewellery Academy";
     }
     form.addEventListener("submit", function (e) {
       if (!window.fetch) return;

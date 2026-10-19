@@ -1,6 +1,6 @@
 # Germani Jewellery — website
 
-Showcase website for **Germani Jewellery**, Sydney (Michel Germani). Static HTML/CSS/JS with no build step and no e-commerce. Enquiries and appointments go through the contact form, phone or email.
+Showcase website for **Germani Jewellery** and the **Germani Jewellery Academy**, Sydney (Michel Germani). Static HTML/CSS/JS with no build step and no e-commerce. Enquiries and appointments go through the contact form, phone or email.
 
 ## Brand rules (from Germani)
 
@@ -19,6 +19,7 @@ Showcase website for **Germani Jewellery**, Sydney (Michel Germani). Static HTML
 | `collections.html` | Filterable gallery of 54 pieces with a lightbox and "Enquire about this piece" link |
 | `house.html` | Michel Germani's story and the house values |
 | `bespoke.html` | Engagement rings and the bespoke process |
+| `academy.html` | Germani Jewellery Academy: foundation, craftsmanship, what it covers, contact |
 | `contact.html` | Appointment form (Netlify Forms) and direct contact details |
 | `404.html` | Not-found page |
 
