@@ -61,9 +61,17 @@
         history.replaceState(null, "", b.dataset.filter === "all" ? location.pathname : "#" + b.dataset.filter);
       });
     });
+    var isFilter = function (h) { return Array.prototype.some.call(filterBtns, function (b) { return b.dataset.filter === h; }); };
     var initial = location.hash.replace("#", "");
-    var known = Array.prototype.some.call(filterBtns, function (b) { return b.dataset.filter === initial; });
-    applyFilter(known ? initial : "all");
+    applyFilter(isFilter(initial) ? initial : "all");
+    /* in-page links such as #rings filter the grid and scroll back to it */
+    window.addEventListener("hashchange", function () {
+      var h = location.hash.replace("#", "");
+      if (!isFilter(h)) return;
+      applyFilter(h);
+      var f = document.querySelector(".filters"), hd = document.querySelector(".site-header");
+      window.scrollTo({ top: f.getBoundingClientRect().top + window.scrollY - (hd ? hd.offsetHeight : 0) - 16, behavior: "smooth" });
+    });
   }
 
   /* Collections: lightbox */

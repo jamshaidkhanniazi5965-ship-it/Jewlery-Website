@@ -16,7 +16,7 @@ Website for **Germani Jewellery Academy** (official business name), Sydney: Mich
 | File | Content |
 |---|---|
 | `index.html` | Home: hero, collections, black opal feature, campaign, founder, bespoke, visit |
-| `collections.html` | Filterable gallery of 54 pieces with a lightbox and "Enquire about this piece" link |
+| `collections.html` | Filterable gallery of 56 pieces, plus a "Made to be worn" row with a lightbox and "Enquire about this piece" link |
 | `house.html` | Michel Germani's story and the house values |
 | `bespoke.html` | Engagement rings and the bespoke process |
 | `academy.html` | Germani Jewellery Academy: foundation, craftsmanship, what it covers, contact |
