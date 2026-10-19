@@ -554,6 +554,7 @@ p { margin: 0 0 1.2em; }
 
 .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(40px, 6vw, 96px); }
 .contact-card h3 { font-size: 1.3rem; margin-top: 1.6em; }
+.map { display: block; width: 100%; aspect-ratio: 4 / 3; min-height: 320px; border: 1px solid var(--line); background: var(--ivory); }
 .contact-card h3:first-child { margin-top: 0; }
 .contact-card p, .contact-card a { color: var(--muted); }
 .contact-card a:hover { color: var(--ink); }
