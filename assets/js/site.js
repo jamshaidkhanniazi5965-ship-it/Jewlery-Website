@@ -53,6 +53,7 @@
     pieces.forEach(function (p) {
       p.hidden = !(cat === "all" || p.dataset.cat.split(" ").indexOf(cat) !== -1);
     });
+    document.querySelectorAll(".cgroup").forEach(function (g) { g.hidden = !g.querySelector(".piece:not([hidden])"); });
   }
   if (filterBtns.length) {
     filterBtns.forEach(function (b) {

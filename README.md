@@ -15,11 +15,12 @@ Website for **Germani Jewellery Academy** (official business name), Sydney: Mich
 
 | File | Content |
 |---|---|
-| `index.html` | Home: hero, collections, black opal feature, campaign, founder, bespoke, visit |
-| `collections.html` | Filterable gallery of 56 pieces, plus a "Made to be worn" row with a lightbox and "Enquire about this piece" link |
-| `house.html` | Michel Germani's story and the house values |
+| `index.html` | Home: large logo on lapis, three doors (Foundation, Collection, Academy), then each introduced in that order, and Visit |
+| `collections.html` | The collection in five chapters: Important Necklaces, Rare Gems, Diamond Necklaces & Bracelets, Engagement Rings, Earrings & More |
+| `house.html` | History & Foundation: Michel Germani's story |
 | `bespoke.html` | Engagement rings and the bespoke process |
-| `academy.html` | Germani Jewellery Academy: foundation, craftsmanship, what it covers, contact |
+| `academy.html` | Germani Jewellery Academy: the 4-page introduction, with a link to the full prospectus |
+| `prospectus.html` | The full 16-page English prospectus, word for word (PDF in `assets/docs/`) |
 | `contact.html` | Appointment form (Netlify Forms) and direct contact details |
 | `404.html` | Not-found page |
 
