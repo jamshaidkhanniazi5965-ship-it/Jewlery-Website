@@ -756,3 +756,4 @@ p { margin: 0 0 1.2em; }
 .main-nav a, .lhero__tag, .ahero .lead, .ahero__tag, .lhero__sub, .ahero__sub { text-shadow: 0 1px 4px rgba(0,0,0,.85); }
 .ahero h1 { filter: drop-shadow(0 2px 4px rgba(0,0,0,.6)); }
 .lhero__tag, .ahero__tag { background: rgba(1,10,56,.45); padding: 6px 14px; border-radius: 3px; }
+.piece__badge { position: absolute; left: 12px; top: 12px; background: rgba(10,28,107,.88); color: #f0c867; font-size: .66rem; letter-spacing: .18em; text-transform: uppercase; padding: 6px 10px; border-radius: 2px; }
