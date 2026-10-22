@@ -775,3 +775,5 @@ p { margin: 0 0 1.2em; }
 .store-pair .store { max-width: none; margin: 0; }
 .store-pair .store img { aspect-ratio: 4 / 3; object-position: 50% 50%; }
 @media (max-width: 760px) { .store-pair { grid-template-columns: 1fr; } }
+.store-trio { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 860px) { .store-trio { grid-template-columns: 1fr; } }
