@@ -771,3 +771,7 @@ p { margin: 0 0 1.2em; }
 .store--wide { max-width: 1100px; }
 .store--wide img, .store--contact img { aspect-ratio: 3 / 2; object-position: 50% 50%; }
 .store figcaption { text-align: center; padding: 14px; font-size: .74rem; letter-spacing: .24em; text-transform: uppercase; color: var(--muted); background: #fbf7f0; }
+.store-pair { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(14px, 2vw, 28px); max-width: 1200px; margin: 0 auto; }
+.store-pair .store { max-width: none; margin: 0; }
+.store-pair .store img { aspect-ratio: 4 / 3; object-position: 50% 50%; }
+@media (max-width: 760px) { .store-pair { grid-template-columns: 1fr; } }
