@@ -1,0 +1,6 @@
+# Card source files and tools are not part of the public site
+tools
+cards/photos
+cards/michel.json
+netlify.toml
+README.md

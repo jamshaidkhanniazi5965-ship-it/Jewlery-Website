@@ -1,0 +1,19 @@
+{
+  "cleanUrls": true,
+  "headers": [
+    { "source": "/(.*)", "headers": [
+      { "key": "X-Content-Type-Options", "value": "nosniff" },
+      { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+      { "key": "X-Frame-Options", "value": "SAMEORIGIN" } ] },
+    { "source": "/assets/(.*)", "headers": [
+      { "key": "Cache-Control", "value": "public, max-age=604800" } ] },
+    { "source": "/michel", "headers": [
+      { "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" } ] },
+    { "source": "/michel.vcf", "headers": [
+      { "key": "X-Robots-Tag", "value": "noindex" },
+      { "key": "Content-Type", "value": "text/vcard; charset=utf-8" },
+      { "key": "Content-Disposition", "value": "attachment; filename=\"Michel-Germani.vcf\"" } ] },
+    { "source": "/cards/(.*)", "headers": [
+      { "key": "X-Robots-Tag", "value": "noindex, nofollow" } ] }
+  ]
+}
