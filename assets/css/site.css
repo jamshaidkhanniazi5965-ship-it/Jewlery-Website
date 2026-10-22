@@ -757,3 +757,10 @@ p { margin: 0 0 1.2em; }
 .ahero h1 { filter: drop-shadow(0 2px 4px rgba(0,0,0,.6)); }
 .lhero__tag, .ahero__tag { background: rgba(1,10,56,.45); padding: 6px 14px; border-radius: 3px; }
 .piece__badge { position: absolute; left: 12px; top: 12px; background: rgba(10,28,107,.88); color: #f0c867; font-size: .66rem; letter-spacing: .18em; text-transform: uppercase; padding: 6px 10px; border-radius: 2px; }
+.commissions { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(20px, 3vw, 40px); max-width: 1000px; margin: 0 auto; }
+.commissions figure { margin: 0; background: #fbf7f0; border: 1px solid #e3cfa3; border-radius: 6px; overflow: hidden; }
+.commissions img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; background: #222; }
+.commissions figcaption { padding: 22px 24px 26px; text-align: center; }
+.commissions h3 { font-size: 1.5rem; margin-bottom: .3em; }
+.commissions p { color: var(--muted); margin: 0; }
+@media (max-width: 760px) { .commissions { grid-template-columns: 1fr; } }
