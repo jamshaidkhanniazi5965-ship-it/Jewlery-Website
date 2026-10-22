@@ -768,3 +768,6 @@ p { margin: 0 0 1.2em; }
 .store img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; }
 .store--contact { max-width: none; margin: 0 0 20px; }
 .store--contact img { aspect-ratio: 16 / 11; object-position: 50% 25%; }
+.store--wide { max-width: 1100px; }
+.store--wide img, .store--contact img { aspect-ratio: 3 / 2; object-position: 50% 50%; }
+.store figcaption { text-align: center; padding: 14px; font-size: .74rem; letter-spacing: .24em; text-transform: uppercase; color: var(--muted); background: #fbf7f0; }
