@@ -142,7 +142,7 @@
     });
   }
 
-  /* Contact: prefill piece + Netlify form submit */
+  /* Contact: prefill piece + open the visitor's email app with the request */
   var form = document.querySelector(".form");
   if (form) {
     var piece = new URLSearchParams(location.search).get("piece");
@@ -153,21 +153,20 @@
       if (interest && /academy/i.test(piece)) interest.value = "Germani Jewellery Academy";
     }
     form.addEventListener("submit", function (e) {
-      if (!window.fetch) return;
       e.preventDefault();
-      var data = new URLSearchParams(new FormData(form)).toString();
-      var btn = form.querySelector("button[type=submit]");
-      btn.disabled = true;
-      fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: data })
-        .then(function (r) {
-          if (!r.ok) throw new Error(r.status);
-          form.hidden = true;
-          document.querySelector(".form-success").classList.add("is-visible");
-        })
-        .catch(function () {
-          btn.disabled = false;
-          alert("Sorry, your request could not be sent. Please call or email us directly.");
-        });
+      var v = function (n) { var f = form.querySelector("[name=" + n + "]"); return f ? f.value.trim() : ""; };
+      var lines = [
+        "Name: " + v("name"),
+        "Phone: " + v("phone"),
+        "Email: " + v("email"),
+        "Interested in: " + v("interest")
+      ];
+      if (v("piece")) lines.push("Piece: " + v("piece"));
+      if (v("message")) lines.push("", v("message"));
+      var subject = "Appointment request: " + v("interest") + " (" + v("name") + ")";
+      location.href = "mailto:" + form.dataset.email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(lines.join("\n"));
+      form.hidden = true;
+      document.querySelector(".form-success").classList.add("is-visible");
     });
   }
 

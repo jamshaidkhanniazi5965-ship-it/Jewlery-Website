@@ -49,7 +49,7 @@ To preview locally: `npx http-server .` and open http://localhost:8080.
 
 ## Michel Germani's business card
 
-- **Digital card:** `https://germani-jewellery.netlify.app/michel` (`michel.html`, kept out of search engines). "Save Contact" downloads `michel.vcf` with his photo.
+- **Digital card:** `https://germani-jewellery.vercel.app/michel` (`michel.html`, kept out of search engines). "Save Contact" downloads `michel.vcf` with his photo.
 - **QR code:** `cards/qr/michel.png` and `cards/qr/michel.svg` (vector, for printers). It opens the digital card.
 - **Printed card:** `cards/print/michel-business-card.pdf`, 90 × 55 mm with 3 mm bleed (page size 96 × 61 mm), front and back. Previews: `cards/print/michel-card-front.png`, `michel-card-back.png`.
 
