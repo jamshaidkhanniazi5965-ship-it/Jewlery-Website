@@ -782,3 +782,6 @@ p { margin: 0 0 1.2em; }
 .store--display { margin-top: clamp(14px, 2vw, 28px); max-width: 480px; }
 .commissions--pair { grid-template-columns: repeat(2, 1fr); max-width: 860px; }
 @media (max-width: 760px) { .commissions--pair { grid-template-columns: 1fr; } }
+.commissions--four { grid-template-columns: repeat(4, 1fr); max-width: 1280px; }
+@media (max-width: 1080px) { .commissions--four { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .commissions--four { grid-template-columns: 1fr; } }
