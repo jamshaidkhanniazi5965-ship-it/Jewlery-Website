@@ -780,3 +780,5 @@ p { margin: 0 0 1.2em; }
 .cbanner { margin: 0 auto clamp(28px, 3vw, 44px); max-width: 1100px; border-radius: 6px; overflow: hidden; }
 .cbanner img { width: 100%; }
 .store--display { margin-top: clamp(14px, 2vw, 28px); max-width: 480px; }
+.commissions--pair { grid-template-columns: repeat(2, 1fr); max-width: 860px; }
+@media (max-width: 760px) { .commissions--pair { grid-template-columns: 1fr; } }
